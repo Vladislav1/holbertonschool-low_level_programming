@@ -3,9 +3,9 @@
 
 main(void)
 {
-  char statement[] = "\"Programming is like building a multilingual puzzle";
+	char statement[] = "\"Programming is like building a multilingual puzzle";
   
-  puts(statement);
+	puts(statement);
 
-  return 0;
+	return 0;
 }

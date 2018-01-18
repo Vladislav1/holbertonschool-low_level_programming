@@ -1,11 +1,11 @@
 /* program prints statment using put */
 #include <stdio.h>
 
-main(void)
+int main(void)
 {
-	char statement[] = "\"Programming is like building a multilingual puzzle";
+	char string[] = "\"Programming is like building a multilingual puzzle";
   
-	puts(statement);
+	puts(string);
 
-	return 0;
+	return(0);
 }

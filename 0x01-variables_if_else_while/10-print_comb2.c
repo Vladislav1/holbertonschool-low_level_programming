@@ -12,13 +12,13 @@ int main(void)
 	{
 		putchar(b);
 		putchar(a);
+
 		if (b != '9' && a == '9')
 		{
 			b++;
 			a = '0';
 		}
-
-		if (b != '9' || a != '9')
+		else if (b != '9' || a != '9')
 		{
 			putchar(',');
 			putchar(' ');

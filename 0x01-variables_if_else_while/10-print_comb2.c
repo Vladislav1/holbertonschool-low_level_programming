@@ -16,9 +16,10 @@ int main(void)
 		if (b != '9' && a == '9')
 		{
 			b++;
-			a = '0';
+			a = '0' - 1;
 		}
-		else if (b != '9' || a != '9')
+
+		if (b != '9' || a != '9')
 		{
 			putchar(',');
 			putchar(' ');

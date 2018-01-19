@@ -25,7 +25,7 @@ int main(void)
 				putchar(n2);     
 			if (n2 == '9' && n1 != '9')
 			{
-				n2 = hold2 - 2;
+				n2 = '0' - 1;
 				n1++;
 			}
 

@@ -1,22 +1,17 @@
 #include <stdio.h>
-
 /**
  * main - prints lots of numbers
  * Return: returns 0
  */
 int main(void)
 {
-	int m1 = '0';
-	int m2 = '0';
-	int n1 = '0';
-	int n2 = '0';
-	int hold1 = '0';
-	int hold2 = '1';
-	int end = '1';
+	int m1, m2, n1, n2, h1, h2;
 
+	h1 = '0';
+	h2 = '1';
 	for (m1 = '0', m2 = '0'; m2 <= '9'; m2++)
 	{
-		for (n1 = hold1, n2 = hold2; n2 <= '9'; n2++)
+		for (n1 = h1, n2 = h2; n2 <= '9' && n1 <= '9'; n2++)
 		{
 				putchar(m1);
 				putchar(m2);
@@ -28,7 +23,6 @@ int main(void)
 				n2 = '0' - 1;
 				n1++;
 			}
-
 			if (!(m1 == '9' && m2 == '8') || !(n1 == '9' && n2 == '9'))
 			{
 				putchar(',');
@@ -36,33 +30,19 @@ int main(void)
 			}
 
 		}
-		if (end == 0)
-		{
-			putchar('\n');
-			return (0);
-		}
 		if (m1 != '9' && m2 == '9')
 		{
 			m2 = '0' - 1;
 			m1++;
 		}
-
-
-		if (hold2 == '9')
+		if (h2 == '9')
 		{
-			hold2 = '0';
-			hold1++;
+			h2 = '0';
+			h1++;
 		}
 		else
-		{
-			hold2++;
-		}
-		if (hold1 == '9' && hold2 == '9')
-			end = 0;
-
+			h2++;
 	}
-
-
-
+	putchar('\n');
 	return (0);
 }

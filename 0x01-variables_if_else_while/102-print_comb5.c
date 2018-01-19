@@ -13,11 +13,11 @@ int main(void)
 	{
 		for (n1 = h1, n2 = h2; n2 <= '9' && n1 <= '9'; n2++)
 		{
-				putchar(m1);
-				putchar(m2);
-				putchar(' ');
-				putchar(n1);
-				putchar(n2);
+			putchar(m1);
+			putchar(m2);
+			putchar(' ');
+			putchar(n1);
+			putchar(n2);
 			if (n2 == '9' && n1 != '9')
 			{
 				n2 = '0' - 1;
